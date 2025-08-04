@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productor de Seguros | Soluciones para Particulares y Empresas</title>
+    <meta name="description" content="Seguros de caución, responsabilidad civil, automotor, vida y personales. Cotizá online con atención personalizada.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Productor de Seguros</h1>
+            <nav class="main-nav" id="mainNav">
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li class="has-submenu">
+                        <a href="#seguros">Seguros</a>
+                        <ul class="submenu">
+                            <li><a href="#caucion">Caución</a></li>
+                            <li><a href="#responsabilidad-civil">Responsabilidad Civil</a></li>
+                            <li><a href="#automotor">Automotor</a></li>
+                            <li><a href="#vida">Vida</a></li>
+                            <li><a href="#personales">Personales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#recursos">Guías y Recursos</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#cotizar" class="cta">Cotizar/Contratar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Protegemos lo que más te importa</h2>
+                <p>Asesorate con profesionales y cotizá tu seguro en minutos.</p>
+                <a href="#cotizar" class="btn-primary">Cotizar ahora</a>
+            </div>
+        </section>
+
+        <section id="seguros" class="seguros">
+            <div class="container">
+                <h2>Nuestros Seguros</h2>
+                <div class="seguros-grid">
+                    <article id="caucion">
+                        <h3>Seguro de Caución</h3>
+                        <p>Garantía para contratos y obligaciones comerciales.</p>
+                        <a href="#cotizar" class="btn-secondary">Cotizar</a>
+                    </article>
+                    <article id="responsabilidad-civil">
+                        <h3>Responsabilidad Civil</h3>
+                        <p>Protección frente a reclamos de terceros.</p>
+                        <a href="#cotizar" class="btn-secondary">Cotizar</a>
+                    </article>
+                    <article id="automotor">
+                        <h3>Seguro Automotor</h3>
+                        <p>Cuida tu vehículo con las mejores coberturas.</p>
+                        <a href="#cotizar" class="btn-secondary">Cotizar</a>
+                    </article>
+                    <article id="vida">
+                        <h3>Seguro de Vida</h3>
+                        <p>Tranquilidad para vos y tu familia.</p>
+                        <a href="#cotizar" class="btn-secondary">Cotizar</a>
+                    </article>
+                    <article id="personales">
+                        <h3>Seguros Personales</h3>
+                        <p>Coberturas adaptadas a tus necesidades.</p>
+                        <a href="#cotizar" class="btn-secondary">Cotizar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-preview">
+            <div class="container">
+                <h2>Últimos Artículos</h2>
+                <ul class="blog-list">
+                    <li><a href="#">¿Qué es un seguro de caución?</a></li>
+                    <li><a href="#">Guía rápida sobre seguros automotor</a></li>
+                    <li><a href="#">Preguntas frecuentes sobre seguros de vida</a></li>
+                </ul>
+                <a href="#" class="btn-secondary">Ir al Blog</a>
+            </div>
+        </section>
+
+        <section id="cotizar" class="cotizar">
+            <div class="container">
+                <h2>Solicitá tu Cotización</h2>
+                <form class="cotizar-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="tipo">Tipo de Seguro</label>
+                    <select id="tipo" required>
+                        <option value="caucion">Caución</option>
+                        <option value="responsabilidad-civil">Responsabilidad Civil</option>
+                        <option value="automotor">Automotor</option>
+                        <option value="vida">Vida</option>
+                        <option value="personales">Personales</option>
+                    </select>
+
+                    <button type="submit" class="btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Estamos para asesorarte. Completa el formulario o escribinos por WhatsApp.</p>
+                <a href="https://wa.me/" class="btn-primary">WhatsApp Business</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Productor de Seguros. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

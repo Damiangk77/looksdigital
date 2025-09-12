@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactar Abogado Sucesiones | Estudio Jurídico</title>
+<meta name="description" content="Solicite una consulta sin cargo con nuestros abogados de sucesiones. Inicie su trámite de herencia hoy mismo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.ejemplo.com/contacto.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<img src="https://via.placeholder.com/150x50.webp?text=Logo" alt="Estudio Jurídico">
+<div class="menu-toggle">☰</div>
+<nav>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="nuestro-estudio.html">Nuestro Estudio</a></li>
+<li><a href="experiencia.html">Guías</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html" class="btn">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="hero">
+<h1>Solicite una Consulta sin Cargo</h1>
+</section>
+<section>
+<form id="contactForm">
+<input type="text" id="name" placeholder="Nombre" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="tel" id="phone" placeholder="Teléfono" required>
+<textarea id="message" placeholder="Mensaje" required></textarea>
+<button type="submit" class="btn align-start">Enviar</button>
+</form>
+</section>
+<section class="info">
+<h2>Otras Formas de Contacto</h2>
+<p>Av. Siempre Viva 123, CABA</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.585399110755!2d-58.3816!3d-34.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzM0LjMiUyA1OMKwMjInNTMuOCJX!5e0!3m2!1ses!2sar!4v0000000000" width="100%" height="250" class="map" allowfullscreen loading="lazy"></iframe>
+<p>Tel: <a href="tel:+541112345678">+54 11 1234 5678</a></p>
+<p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+</section>
+<section class="faq">
+<h2>Preguntas Frecuentes</h2>
+<details>
+<summary>¿La primera consulta tiene costo?</summary>
+<p>No, la primera consulta es sin cargo y sin compromiso.</p>
+</details>
+<details>
+<summary>¿Qué documentación necesito?</summary>
+<p>Partida de defunción y DNI de los herederos principales, entre otros.</p>
+</details>
+<details>
+<summary>¿Cuánto tarda el trámite?</summary>
+<p>El tiempo promedio es de 6 a 12 meses según la complejidad.</p>
+</details>
+</section>
+</main>
+<footer>
+<div class="footer-columns">
+<div>
+<h3>Contacto</h3>
+<p>Av. Siempre Viva 123, CABA</p>
+<p>Tel: <a href="tel:+541112345678">+54 11 1234 5678</a></p>
+<p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+</div>
+<div>
+<h3>Navegación</h3>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h3>Legal</h3>
+<ul>
+<li><a href="#">Términos</a></li>
+<li><a href="#">Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">© <span id="year"></span> Estudio Jurídico</div>
+</footer>
+<script>
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('year').textContent=new Date().getFullYear();
+const form=document.getElementById('contactForm');
+form.addEventListener('submit',e=>{e.preventDefault();alert('Mensaje enviado');form.reset();});
+['name','email','phone','message'].forEach(id=>{
+const field=document.getElementById(id);
+field.addEventListener('input',()=>{field.classList.toggle('error',!field.checkValidity());});
+});
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"ContactPage",
+"name":"Contacto Estudio Jurídico",
+"url":"https://www.ejemplo.com/contacto.html"
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abogado Sucesiones en CABA | Estudio Jurídico</title>
+<meta name="description" content="Estudio jurídico especializado en sucesiones. Abogados de sucesiones en CABA con atención personalizada. Consulte honorarios y resuelva su herencia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.ejemplo.com/">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<img src="https://via.placeholder.com/150x50.webp?text=Logo" alt="Estudio Jurídico">
+<div class="menu-toggle">☰</div>
+<nav>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="nuestro-estudio.html">Nuestro Estudio</a></li>
+<li><a href="experiencia.html">Guías</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html" class="btn">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="hero video">
+<video autoplay muted loop>
+<source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+</video>
+<div class="hero-content reveal">
+<h1>Abogado sucesiones</h1>
+<p>Resolución integral de herencias en CABA.</p>
+<a href="contacto.html" class="btn">Consulta sin cargo</a>
+</div>
+</section>
+<section class="reveal">
+<h2>Nuestros Servicios</h2>
+<div class="cards">
+<a class="card" href="servicios/sucesion-sin-testamento.html"><h3>Sucesión sin Testamento</h3><p>Gestión completa de sucesiones ab intestato.</p></a>
+<a class="card" href="servicios/sucesion-testamentaria.html"><h3>Sucesión Testamentaria</h3><p>Asesoramiento en sucesiones con testamento.</p></a>
+<a class="card" href="servicios/tracto-abreviado.html"><h3>Tracto Abreviado</h3><p>Procedimientos rápidos para inmuebles.</p></a>
+</div>
+</section>
+<section class="reveal">
+<h2>Proceso Sucesorio</h2>
+<ol class="timeline">
+<li class="timeline-item">Recolección de Documentos</li>
+<li class="timeline-item">Presentación de la Demanda</li>
+<li class="timeline-item">Declaratoria de Herederos</li>
+<li class="timeline-item">Aprobación y Adjudicación</li>
+</ol>
+</section>
+<section class="reveal">
+<h2>Por Qué Confiar en Nosotros</h2>
+<ul>
+<li>Más de 20 años de experiencia en sucesiones.</li>
+<li>Atención personalizada y transparente.</li>
+<li>Resultados comprobados en CABA.</li>
+</ul>
+</section>
+<section class="testimonials reveal">
+<h2>Testimonios</h2>
+<div class="slider" id="slider">
+<div class="testimonial">
+<p>"Gestionaron la sucesión de mi familia de forma impecable."</p>
+<strong>- María P.</strong>
+</div>
+<div class="testimonial">
+<p>"Profesionales y claros en cada paso del proceso."</p>
+<strong>- Juan R.</strong>
+</div>
+<div class="testimonial">
+<p>"Sin dudas los recomendaría, excelentes abogados."</p>
+<strong>- Laura G.</strong>
+</div>
+</div>
+<div class="slider-controls">
+<button id="prev">Prev</button>
+<button id="next">Next</button>
+</div>
+</section>
+<section class="reveal">
+<h2>Listo para avanzar?</h2>
+<a href="contacto.html" class="btn">Contáctenos</a>
+</section>
+</main>
+<footer>
+<div class="footer-columns">
+<div>
+<h3>Contacto</h3>
+<p>Av. Siempre Viva 123, CABA</p>
+<p>Tel: <a href="tel:+541112345678">+54 11 1234 5678</a></p>
+<p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+</div>
+<div>
+<h3>Navegación</h3>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h3>Legal</h3>
+<ul>
+<li><a href="#">Términos</a></li>
+<li><a href="#">Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">© <span id="year"></span> Estudio Jurídico</div>
+</footer>
+<script>
+// menú móvil
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+// year
+document.getElementById('year').textContent=new Date().getFullYear();
+// reveal on scroll
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('active');}});});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+// slider
+let index=0;const slider=document.getElementById('slider');const items=document.querySelectorAll('.testimonial');
+function show(i){index=(i+items.length)%items.length;slider.style.transform=`translateX(${-index*100}%)`;}
+document.getElementById('prev').onclick=()=>show(index-1);
+document.getElementById('next').onclick=()=>show(index+1);
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LegalService",
+"name":"Estudio Jurídico Sucesiones",
+"image":"https://via.placeholder.com/600x400.webp",
+"address":{"@type":"PostalAddress","streetAddress":"Av. Siempre Viva 123","addressLocality":"Buenos Aires","addressRegion":"CABA","addressCountry":"AR"},
+"url":"https://www.ejemplo.com/",
+"telephone":"+54 11 1234 5678"
+}
+</script>
+</body>
+</html>

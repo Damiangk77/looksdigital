@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Por Qué Elegir Nuestro Estudio Jurídico</title>
+<meta name="description" content="Conozca al equipo de abogados expertos en sucesiones y nuestra metodología de trabajo humanizada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.ejemplo.com/nuestro-estudio.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<img src="https://via.placeholder.com/150x50.webp?text=Logo" alt="Estudio Jurídico">
+<div class="menu-toggle">☰</div>
+<nav>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="nuestro-estudio.html">Nuestro Estudio</a></li>
+<li><a href="experiencia.html">Guías</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html" class="btn">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="hero">
+<h1>Un Equipo Experto y Humano a su Lado</h1>
+</section>
+<section class="wide">
+<h2>Nuestra Misión y Valores</h2>
+<p>Brindar un servicio jurídico cercano y eficiente, priorizando la transparencia y el trato humano.</p>
+<h2>Conozca a los Abogados</h2>
+<div class="team">
+<div class="card"><img src="https://via.placeholder.com/300x200.webp?text=Abogado" alt="Abogado 1"><h3>Dr. Juan Pérez</h3><p>Especialista en sucesiones complejas.</p></div>
+<div class="card"><img src="https://via.placeholder.com/300x200.webp?text=Abogada" alt="Abogada 2"><h3>Dra. Ana Gómez</h3><p>Experta en derecho inmobiliario y tracto abreviado.</p></div>
+<div class="card"><img src="https://via.placeholder.com/300x200.webp?text=Abogado" alt="Abogado 3"><h3>Dr. Luis Martínez</h3><p>Asesor en sucesiones internacionales.</p></div>
+</div>
+<h2>Nuestra Metodología</h2>
+<ol>
+<li>Evaluación inicial del caso.</li>
+<li>Planificación estratégica y presupuestaria.</li>
+<li>Gestión judicial y seguimiento continuo.</li>
+<li>Cierre del proceso y asesoramiento post sentencia.</li>
+</ol>
+</section>
+<section class="center">
+<a href="contacto.html" class="btn">Agende una Consulta</a>
+</section>
+</main>
+<footer>
+<div class="footer-columns">
+<div>
+<h3>Contacto</h3>
+<p>Av. Siempre Viva 123, CABA</p>
+<p>Tel: <a href="tel:+541112345678">+54 11 1234 5678</a></p>
+<p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+</div>
+<div>
+<h3>Navegación</h3>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h3>Legal</h3>
+<ul>
+<li><a href="#">Términos</a></li>
+<li><a href="#">Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">© <span id="year"></span> Estudio Jurídico</div>
+</footer>
+<script>
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"AboutPage",
+"name":"Nuestro Estudio Jurídico",
+"url":"https://www.ejemplo.com/nuestro-estudio.html",
+"mainEntity":[
+{"@type":"Attorney","name":"Dr. Juan Pérez"},
+{"@type":"Attorney","name":"Dra. Ana Gómez"},
+{"@type":"Attorney","name":"Dr. Luis Martínez"}
+]
+}
+</script>
+</body>
+</html>

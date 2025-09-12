@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios Legales de Sucesión | Estudio Jurídico</title>
+<meta name="description" content="Conozca nuestros servicios legales de sucesión. Gestión de herencias y proceso sucesorio completo en CABA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.ejemplo.com/servicios-de-sucesion.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<img src="https://via.placeholder.com/150x50.webp?text=Logo" alt="Estudio Jurídico">
+<div class="menu-toggle">☰</div>
+<nav>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="nuestro-estudio.html">Nuestro Estudio</a></li>
+<li><a href="experiencia.html">Guías</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html" class="btn">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="hero">
+<h1>Servicios Legales de Sucesión</h1>
+</section>
+<section>
+<p>Brindamos un servicio integral para gestionar herencias y todo el proceso sucesorio con eficiencia y transparencia.</p>
+<div class="grid">
+<a class="card" href="servicios/sucesion-sin-testamento.html"><h3>Sucesión sin Testamento</h3><p>Declaratoria de herederos y administración completa.</p></a>
+<a class="card" href="servicios/sucesion-testamentaria.html"><h3>Sucesión Testamentaria</h3><p>Ejecución y control de disposiciones testamentarias.</p></a>
+<a class="card" href="servicios/tracto-abreviado.html"><h3>Tracto Abreviado</h3><p>Regularización rápida de inmuebles.</p></a>
+</div>
+</section>
+<section class="center">
+<a href="contacto.html" class="btn">Solicitar Consulta</a>
+</section>
+</main>
+<footer>
+<div class="footer-columns">
+<div>
+<h3>Contacto</h3>
+<p>Av. Siempre Viva 123, CABA</p>
+<p>Tel: <a href="tel:+541112345678">+54 11 1234 5678</a></p>
+<p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+</div>
+<div>
+<h3>Navegación</h3>
+<ul>
+<li><a href="servicios-de-sucesion.html">Servicios</a></li>
+<li><a href="honorarios.html">Honorarios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h3>Legal</h3>
+<ul>
+<li><a href="#">Términos</a></li>
+<li><a href="#">Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">© <span id="year"></span> Estudio Jurídico</div>
+</footer>
+<script>
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Service",
+"name":"Servicios de Sucesión",
+"url":"https://www.ejemplo.com/servicios-de-sucesion.html",
+"hasOfferCatalog":{"@type":"OfferCatalog","name":"Catálogo de Servicios","itemListElement":[
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sucesión sin Testamento","url":"https://www.ejemplo.com/servicios/sucesion-sin-testamento.html"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sucesión Testamentaria","url":"https://www.ejemplo.com/servicios/sucesion-testamentaria.html"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tracto Abreviado","url":"https://www.ejemplo.com/servicios/tracto-abreviado.html"}}
+]}
+}
+</script>
+</body>
+</html>

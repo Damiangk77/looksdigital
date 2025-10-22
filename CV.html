@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damián Krzychowiec - CV Instructor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-primary: #2c3e50;
+        --color-accent: #1abc9c;
+        --color-highlight: #f39c12;
+        --shadow: rgba(44, 62, 80, 0.2);
+        --linkedin-blue: #0a66c2;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        color: var(--color-primary);
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 var(--shadow);
+        overflow: hidden;
+      }
+
+      /* LinkedIn Header Styles */
+      .header-wrapper {
+        position: relative;
+        margin-bottom: 80px;
+      }
+      .header-banner {
+        background-color: var(--color-primary);
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("fotoDeFondo.png");
+        background-size: cover;
+        background-position: center;
+        height: 180px;
+      }
+      .profile-image {
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      header {
+        text-align: center;
+        padding: 90px 20px 30px 20px;
+      }
+      /* End LinkedIn Header Styles */
+
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+        color: var(--color-primary);
+      }
+
+      .subtitle {
+        font-size: 17px;
+        font-weight: 400;
+        opacity: 0.95;
+        margin-bottom: 18px;
+        letter-spacing: 0.5px;
+        color: #555;
+      }
+
+      .contact {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+        color: var(--color-primary);
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 22px;
+        background: var(--color-accent);
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .social-link:hover {
+        background: var(--color-highlight);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .url-text {
+        font-size: 14px;
+        color: #777;
+      }
+
+      section {
+        margin-bottom: 45px;
+        padding: 0 40px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .section-header::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: var(--color-accent);
+        border-radius: 50%;
+        margin-right: 15px;
+        box-shadow: 0 0 12px rgba(26, 188, 156, 0.4);
+      }
+
+      .section-header::after {
+        content: "";
+        position: absolute;
+        left: 32px;
+        bottom: -8px;
+        width: 60px;
+        height: 3px;
+        background: var(--color-highlight);
+        border-radius: 2px;
+      }
+
+      h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+
+      .job-title {
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--color-primary);
+        margin-top: 25px;
+        padding: 15px 20px;
+        background: rgba(26, 188, 156, 0.08);
+        border-left: 4px solid var(--color-accent);
+        border-radius: 0 8px 8px 0;
+      }
+
+      .company {
+        font-style: italic;
+        color: #555;
+        font-size: 15px;
+        margin-bottom: 12px;
+        padding-left: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 30px;
+        position: relative;
+      }
+
+      ul li {
+        margin-bottom: 14px;
+        position: relative;
+        padding-left: 5px;
+        transition: all 0.3s ease;
+      }
+
+      ul li:hover {
+        transform: translateX(5px);
+        color: var(--color-accent);
+      }
+
+      ul li::before {
+        content: "▸";
+        color: var(--color-highlight);
+        position: absolute;
+        left: -25px;
+        top: 0;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 35px;
+      }
+
+      .skill-category {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+
+      .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(26, 188, 156, 0.15);
+        border-color: var(--color-accent);
+      }
+
+      .skill-category h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        color: var(--color-accent);
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid rgba(243, 156, 18, 0.3);
+      }
+
+      .certification {
+        margin-bottom: 25px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        border-left: 5px solid var(--color-highlight);
+        box-shadow: 0 3px 15px var(--shadow);
+        transition: all 0.3s ease;
+      }
+
+      .certification:hover {
+        transform: translateX(8px);
+        box-shadow: 0 5px 20px rgba(243, 156, 18, 0.2);
+      }
+
+      .certification strong {
+        color: var(--color-primary);
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .legal-block {
+        padding: 25px 40px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .project-card h3 {
+        color: var(--color-primary);
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+        width: 100%;
+      }
+
+      .project-card p {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .project-card ul {
+        padding-left: 25px;
+        margin: 15px 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .project-card li {
+        margin-bottom: 8px;
+        width: 100%;
+      }
+
+      .project-note {
+        font-style: italic;
+        color: #555;
+        background: rgba(26, 188, 156, 0.1);
+        padding: 12px;
+        border-radius: 8px;
+        border-left: 3px solid var(--color-accent);
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 16px;
+        padding: 30px 40px;
+        border-top: 1px solid #eee;
+        font-style: italic;
+        font-weight: 600;
+        background: linear-gradient(90deg, #2980b9, #2c3e50);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      /* Imprimir */
+      @media print {
+        body {
+          background: white;
+          color: #000;
+          font-size: 12pt;
+        }
+        .container {
+          box-shadow: none;
+          border: 1px solid #ccc;
+          margin: 0;
+          max-width: none;
+          border-radius: 0;
+        }
+        .header-banner {
+          background-color: #2c3e50 !important;
+        }
+        .social-link {
+          background: none;
+          color: #000;
+          text-decoration: underline;
+        }
+        a[href]:after {
+          content: " [" attr(href) "]";
+          font-size: 10px;
+          color: #000;
+        }
+        section,
+        .certification,
+        .job-title {
+          page-break-inside: avoid;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 0;
+        }
+        .container {
+          margin: 0;
+          border-radius: 0;
+        }
+        header {
+          padding: 90px 20px 20px 20px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        .subtitle {
+          font-size: 15px;
+        }
+        .contact {
+          font-size: 15px;
+        }
+        section {
+          padding: 0 20px;
+        }
+        .skills-container {
+          grid-template-columns: 1fr;
+        }
+        .social-links {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+      /* Estilos para la sección de dos columnas */
+      .dual-column-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+
+      .left-column,
+      .right-column {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .left-column h3,
+      .right-column h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        color: var(--color-accent);
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid rgba(243, 156, 18, 0.3);
+      }
+
+      .left-column ul,
+      .right-column ul {
+        list-style: none;
+        padding-left: 25px;
+      }
+
+      .left-column li,
+      .right-column li {
+        margin-bottom: 14px;
+        position: relative;
+        padding-left: 5px;
+      }
+
+      .left-column li::before,
+      .right-column li::before {
+        content: "•";
+        color: var(--color-highlight);
+        position: absolute;
+        left: -20px;
+        top: 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      /* Responsive: En móviles las columnas se apilan */
+      @media (max-width: 768px) {
+        .dual-column-section {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-banner"></div>
+        <img
+          src="fotoPerfil.jpeg"
+          alt="Damián Krzychowiec"
+          class="profile-image"
+        />
+        <header>
+          <h1>DAMIÁN KRZYCHOWIEC</h1>
+          <p class="subtitle">
+            Instructor Certificado | Tecnología & Educación
+          </p>
+          <div class="contact">
+            📞 +54 11 5595-0457 • ✉️ damiangk77@gmail.com
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://linkedin.com/in/damiangk77"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              >💼 linkedin.com/in/damiangk77</a
+            >
+            <a
+              href="https://legalinnovacion.com"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              >💻 Desarrollo web: legalinnovacion.com</a
+            >
+            <span class="url-text"
+              >Proyecto personal aplicado al derecho y seguros</span
+            >
+          </div>
+        </header>
+      </div>
+
+      <section>
+        <div class="section-header">
+          <h2>Perfil Profesional</h2>
+        </div>
+        <p>
+          Instructor certificado en Formación Profesional con una sólida
+          trayectoria previa como líder de equipos en entornos comerciales y de
+          atención al público. Durante más de 20 años desarrollé y gestioné
+          equipos multidisciplinarios, diseñé procesos de capacitación práctica
+          y acompañé el crecimiento profesional de decenas de colaboradores.
+          Actualmente aplico esa experiencia directiva y formativa en el ámbito
+          educativo, combinando mis competencias pedagógicas con una visión
+          operativa y humana. Cursando Tecnicatura en Comercio Electrónico con
+          destacado rendimiento, busco integrar tecnología, enseñanza práctica y
+          desarrollo de personas para formar profesionales listos para el
+          mercado laboral.
+        </p>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Experiencia Profesional</h2>
+        </div>
+
+        <p class="job-title">Supervisor Operativo | Formador Práctico</p>
+        <p class="company">Jumbo Retail S.A. | 1997 – 2011</p>
+        <ul>
+          <li>
+            <strong>Lideré y formé equipos</strong> de hasta 15 personas,
+            diseñando procesos de inducción efectivos y acompañando el
+            desarrollo continuo de cada miembro.
+          </li>
+          <li>
+            <strong>Actué como mentor constante</strong>, transmitiendo
+            conocimientos técnicos, normas de empresa y habilidades de atención
+            al cliente.
+          </li>
+          <li>
+            <strong>Planifiqué y ejecuté capacitaciones prácticas</strong> para
+            nuevos ingresos, logrando una rápida adaptación y reducción de
+            rotación.
+          </li>
+          <li>
+            Coordiné planes comerciales y optimicé procesos operativos mediante
+            herramientas de gestión interna.
+          </li>
+          <li>
+            Promoví un ambiente de trabajo colaborativo, resolviendo conflictos
+            y fortaleciendo la comunicación entre áreas.
+          </li>
+        </ul>
+
+        <p class="job-title">Responsable de Atención y Gestión</p>
+        <p class="company">Farmacia Mastronardi | 2011 – 2018</p>
+        <ul>
+          <li>
+            Gestioné la atención integral al cliente, incluyendo trámites con
+            obras sociales y seguimiento postventa.
+          </li>
+          <li>
+            Supervisé el control de stock y transferencias, asegurando
+            disponibilidad continua de productos clave.
+          </li>
+          <li>
+            Organicé compras estratégicas según demanda real, optimizando
+            rotación y reduciendo pérdidas.
+          </li>
+          <li>
+            Fortalecí procesos administrativos con enfoque en eficiencia,
+            precisión y servicio de calidad.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Formación y Certificaciones</h2>
+        </div>
+        <div class="certification">
+          <strong>Tecnicatura Universitaria en Comercio Electrónico</strong
+          ><br />
+          En curso – 60%| Promedio destacado
+        </div>
+        <div class="certification">
+          <strong>Instructor de Formación Profesional</strong> (Certificación
+          Oficial)<br />
+          Herramientas pedagógicas para planificar, ejecutar y evaluar procesos
+          formativos con enfoque laboral.
+        </div>
+        <div class="certification">
+          <strong>Operador de Marketing y Venta Digital</strong> (144 hs)<br />
+          Estrategias digitales, SEO, redes sociales y gestión de plataformas de
+          e-commerce.
+        </div>
+        <div class="certification">
+          <strong>Desarrollo Web</strong> (Certificación Oficial)<br />
+          Capacitado para enseñar HTML, CSS y JavaScript en contextos técnicos.
+        </div>
+        <div class="certification">
+          <strong
+            >Programador | Gestión de Redes Sociales | Aspirante a Matrícula de
+            Seguros</strong
+          >
+        </div>
+        <div class="certification">
+          <strong>Bachiller en Economía y Gestión de las Organizaciones</strong
+          ><br />
+          Especialización en Microemprendimientos
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Habilidades</h2>
+        </div>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Pedagógicas y Humanas</h3>
+            <ul>
+              <li>Liderazgo y conducción de equipos</li>
+              <li>Capacitación práctica y mentoría</li>
+              <li>Planificación didáctica</li>
+              <li>Evaluación del aprendizaje</li>
+              <li>Comunicación asertiva y oratoria</li>
+              <li>Gestión organizacional</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Técnicas y Digitales</h3>
+            <ul>
+              <li>Diseño Web: HTML, CSS,</li>
+              <li>Python,JavaScript</li>
+              <li>Marketing Digital y SEO Sales Funnel</li>
+              <li>E-commerce y estrategias digitales</li>
+              <li>Visual Studio Code, Miro, Make</li>
+              <li>Control de stock y sistemas de gestión</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOQUE DE PROYECTOS DESTACADOS - AHORA SIN ESPACIO VACÍO -->
+      <section class="legal-block">
+        <div class="section-header">
+          <h2>Proyectos Destacados</h2>
+        </div>
+        <div class="project-card">
+          <h3>Plataforma Legalinnovación</h3>
+          <p>
+            <strong>Desarrollo web y gestión digital</strong> para estudio legal
+            especializado en:
+          </p>
+          <ul>
+            <li>Asesoría para PYMES, emprendedores e influencers</li>
+            <li>Reclamos a seguros (accidentes, ART, hogar, tecnología)</li>
+            <li>Registro de marcas y contratos digitales</li>
+            <li>Encuadre legal para e-commerce y creadores de contenido</li>
+          </ul>
+          <p class="project-note">
+            Proyecto personal que integra mi experiencia en tecnología con el
+            ámbito legal y seguros, orientado a brindar soluciones prácticas
+            para el mercado actual.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Información Complementaria</h2>
+        </div>
+        <div class="dual-column-section">
+          <!-- Columna Izquierda: Idiomas -->
+          <div class="left-column">
+            <h3>Idiomas</h3>
+            <ul>
+              <li><strong>Español:</strong> Nativo</li>
+              <li><strong>Inglés:</strong> Intermedio (lectura técnica)</li>
+              <li><strong>Inglés:</strong> documentación de desarrollo web</li>
+              <li>
+                <strong>Inglés:</strong> actualización profesional en entornos
+                digitales
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna Derecha: Disponibilidad/Contacto -->
+          <div class="right-column">
+            <h3>Disponibilidad</h3>
+            <ul>
+              <li>Clases presenciales, virtuales o híbridas</li>
+              <li>Horarios flexibles para instituciones educativas</li>
+              <li>Buenos Aires</li>
+              <li>Consultas: damiangk77@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Disponible para clases presenciales, virtuales o híbridas. Orientado a
+        instituciones educativas, centros de formación profesional y programas
+        de capacitación técnica.
+      </footer>
+    </div>
+  </body>
+</html>
